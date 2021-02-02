@@ -1,5 +1,5 @@
 """
-WSGI config for SSIL_SSO_MS project.
+WSGI config for product project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -12,6 +12,6 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('SERVER_GATEWAY_INTERFACE', 'Web')
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SSIL_SSO_MS.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'product.settings')
 
 application = get_wsgi_application()

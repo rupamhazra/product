@@ -2,9 +2,9 @@ import os
 from celery import Celery
 
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SSIL_SSO_MS.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'product.settings')
 
-app = Celery('SSIL_SSO_MS')
+app = Celery('product')
 app.config_from_object('django.conf:settings', namespace='CELERY')
 app.autodiscover_tasks()
 
